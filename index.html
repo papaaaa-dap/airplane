@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sky Force 1945</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
+    <style>
+        /* Menghilangkan margin dan membuat background halaman hitam pekat */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Ini kunci agar area luar game tidak mengganggu */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            touch-action: none; /* Mencegah layar HP goyang saat main */
+        }
+
+        canvas {
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.2); /* Efek glow tipis biar keren */
+        }
+
+        #game-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container"></div>
+    <script src="main.js"></script>
+</body>
+</html>
